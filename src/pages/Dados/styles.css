@@ -1,0 +1,25 @@
+.active-data-project {
+    width: 100%;
+}
+
+.active-data-user {
+    width: 100%;
+}
+
+.remove-data-project {
+    display: none;
+}
+
+.remove-data-user {
+    display: none;
+}
+
+.remove-backround-color-li-1 {
+    background-color: #1c1c25;
+    transition: ease-in-out 0.25s;
+}
+
+.remove-backround-color-li-2 {
+    background-color: #1c1c25;
+    transition: ease-in-out 0.25s;
+}

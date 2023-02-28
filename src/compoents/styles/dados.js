@@ -347,6 +347,10 @@ export const LinkReposFollorws = styled(Link)`
   border-radius: 5px;
   background-color: #047dda;
   color: white;
+  :hover {
+    background-color: #0d61c8;
+    transition: ease-in-out 0.25s;
+  }
   @media (max-width: 1700px) and (min-width: 1300px) {
     width: 150px;
   }
@@ -483,10 +487,11 @@ export const ActiveDataProject = styled.div`
 `;
 
 export const DataProject = styled.div`
-  margin: 0 15px;
-  max-width: 1500px;
+  margin: 40px 15px;
+  display: flex;
+  flex-direction: column;
   ul{
-     display: flex;
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 10px;
@@ -508,9 +513,7 @@ export const DataProject = styled.div`
         flex-direction: column;
         width: 100%;   
     }
-
-}
-
+  }
 `;
 
 export const TitleProject = styled.div`
@@ -565,23 +568,43 @@ export const LiDataProject = styled.div`
   background-color: #252530;
   margin: 10px 0;
   font-size: 1rem;
-  @media (max-width: 1600px) {
-    .li-data-project {
-      width: 32%;
-      height: 17em;
+  p {
+    font-size: 1rem;
+    margin: 5px 0px 0px 0px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow-x: hidden;
+    width: 250px;
+  }
+  a {
+    position: relative;
+    bottom: 5px;
+    background-color: #047dda;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    :hover {
+      :hover {
+        background-color: #0d61c8;
+        transition: ease-in-out 0.25s;
+      }
     }
-
-@media(max-width:1000px) {
-  .li-data-project {
-      width: 350px;
-      height: 15em;
+  }
+  @media (max-width: 1600px) {
+    width: 32%;
+  }
+  @media (max-width: 1000px) {
+    width: 350px;
+    height: 15em;
   }
 
-  @media(max-width:850px) {
-    .li-data-project {
-        width: 100%;
-        height: 12em;
+  @media (max-width: 850px) {
+    width: 100%;
+    height: 12em;
+  }
+  @media (max-width: 500px) {
+    p {
+      font-size: 0.85rem;
     }
-
   }
 `;

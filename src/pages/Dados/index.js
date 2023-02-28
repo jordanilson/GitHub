@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { BsFillPersonFill } from "react-icons/bs";
 import { AiFillFolder } from "react-icons/ai";
 import { UserContext } from "../../context/user";
+import './styles.css'
 import ApexCharts from "react-apexcharts";
 import {
   Main,
@@ -577,20 +578,20 @@ function Dados() {
                   return (
                     <LiDataProject className="li-data-project" key={item.id}>
                       <div className="column-div-li-data-project-1">
-                        <span>
+                        <p>
                           <strong>Projeto:</strong>
                           {item.name}
-                        </span>
-                        <span className="span-caractere">
+                        </p>
+                        <p className="span-caractere">
                           <strong>Descrição:</strong>
                           <p> {item.description}</p>
-                        </span>
-                        <span>
+                        </p>
+                        <p>
                           <strong>Descrição:</strong> {item.created_at}
-                        </span>
-                        <span>
+                        </p>
+                        <p>
                           <strong>Linguagem:</strong> {item.language}
-                        </span>
+                        </p>
                       </div>
                       <div className="column-div-li-data-project-2">
                         <a
