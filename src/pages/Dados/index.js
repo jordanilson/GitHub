@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { BsFillPersonFill } from "react-icons/bs";
 import { AiFillFolder } from "react-icons/ai";
 import { UserContext } from "../../context/user";
-import './styles.css'
+import "./styles.css";
 import ApexCharts from "react-apexcharts";
 import {
   Main,
@@ -441,7 +441,10 @@ function Dados() {
       chart: {
         width: 400,
         type: "pie",
+        foreColor: "white",
       },
+
+
       labels: [
         `${strLanguageN1}`,
         `${strLanguageN2}`,
@@ -506,6 +509,8 @@ function Dados() {
                         series={series}
                         type="pie"
                         height={400}
+                        foreColor='white'
+                        
                       />
                     </div>
                   </FlexGraphicDataGuys>
